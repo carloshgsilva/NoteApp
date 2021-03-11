@@ -4,7 +4,7 @@ import NoteEditor from '../components/NoteEditor.js';
 import AddNoteButton from '../components/AddNoteButton.js';
 import { useState } from 'react';
 
-var initialNotes = [{title:"Note 1", content:"Some Content"}, {title:"Note 2", content:"Some Content"}];
+var initialNotes = JSON.parse(localStorage.getItem("notes"))||[{title:"Note 1", content:"Some Content"}, {title:"Note 2", content:"Some Content"}];
 
 function App() {
   const [notes, setNotes] = useState(initialNotes);
@@ -19,6 +19,7 @@ function App() {
   var handleEditNoteDone = () => {
     setNotes(notes);
     setEditorOpen(false);
+    localStorage.setItem("notes", JSON.stringify(notes));
   }
 
   var handleEditNoteDelete = () => {
