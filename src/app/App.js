@@ -44,8 +44,8 @@ function App() {
       <main>
         <div className="App-container">
           <NoteList notes={notes} onEdit={handleEditNote}></NoteList>
+          <AddNoteButton onClick={handleNewNote}></AddNoteButton>
         </div>
-        <AddNoteButton onClick={handleNewNote}></AddNoteButton>
       </main>
       <NoteEditor note={editingNote} open={editorOpen} onDone={handleEditNoteDone} onDelete={handleEditNoteDelete}/>
     </div>
