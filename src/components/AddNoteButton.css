@@ -1,0 +1,13 @@
+.AddNoteButton {
+    display: inline-block;
+    color: gray;
+    font-weight: bold;
+}
+
+.AddNoteButton .Inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    line-height: 1;
+}

@@ -1,0 +1,19 @@
+.Modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0008;
+    transition: opacity 200ms ease-in;
+}
+
+.Modal.Hide {
+  opacity: 0.0;
+  pointer-events: none;
+}
+
+.Modal.Show {
+  opacity: 1.0;
+  pointer-events: all;
+}

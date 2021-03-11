@@ -1,4 +1,8 @@
 # NoteApp
 Note taking web app using ReactJS and JavaScript
 
-This project is mainly for learning purposes
+This project is for learning purposes
+
+### TODO
+[ ] - Checklist
+[ ] - Dark mode

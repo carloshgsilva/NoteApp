@@ -1,9 +1,9 @@
-import Note from './Note.js'
+import Note from './Note.js';
 
-function NoteList(props) {
+function NoteList({notes, onEdit}) {
     return (
-        props.notes.map((obj, index)=>
-            <Note {...obj}/>
+        notes.map((obj, index)=>
+            <Note key={index} onClick={()=>onEdit(obj)} {...obj}/>
         )
     );
 }

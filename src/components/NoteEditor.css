@@ -1,0 +1,36 @@
+.Wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.NoteEditor {
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 1em;
+    box-shadow: 0 0 12px #0002;
+    font-size: 1.1em;
+}
+
+
+.NoteEditor-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+[contenteditable][placeholder]:empty:before {
+    content: attr(placeholder);
+    position: absolute;
+    color: gray;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+[contenteditable] {
+    outline: none;
+    min-height: 1em;
+}
