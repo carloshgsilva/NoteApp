@@ -23,6 +23,7 @@
 
 .NoteEditor-toolbar {
     display: flex;
+    margin-top: 1em;
 }
 
 [contenteditable][placeholder]:empty:before {
@@ -35,5 +36,5 @@
 
 [contenteditable] {
     outline: none;
-    min-height: 1em;
+    min-height: 1.25em;
 }
