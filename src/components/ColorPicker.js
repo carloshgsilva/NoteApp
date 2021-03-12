@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './ColorPicker.css';
 
 const Colors = [
