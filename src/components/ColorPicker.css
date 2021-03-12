@@ -1,0 +1,62 @@
+.ColorPicker {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.ColorPicker-color {
+    flex: 1;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #0008;
+    background-color: red;
+    cursor: pointer;
+    transition: transform 100ms ease-out;
+}
+
+.ColorPicker-color:hover {
+    transform: scale(1.05);
+}
+
+.ColorPicker-color:active {
+    transform: scale(0.95);
+}
+
+.ColorPicker-panel {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 12px #0008;
+    overflow: hidden;
+    transition: width 200ms, height 200ms, border-radius 200ms, background-color 200ms, color 200ms ease-out;
+}
+
+
+.ColorPicker:not(:hover) .ColorPicker-panel {
+    width: 20px;
+    height: 20px;
+}
+
+.ColorPicker:hover .ColorPicker-panel {
+    background-color: white !important;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.ColorPicker-panel:not(:hover) .ColorPicker-color {
+    opacity: 0.0;
+}
+
+.ColorPicker-panel:hover .ColorPicker-color {
+    opacity: 1.0;
+}

@@ -2,8 +2,8 @@ import Note from './Note.js';
 
 function NoteList({notes, onEdit}) {
     return (
-        notes.map((obj, index)=>
-            <Note key={index} onClick={()=>onEdit(obj)} {...obj}/>
+        notes.map((note, index)=>
+            <Note key={index} onClick={()=>onEdit(note)} note={note}/>
         )
     );
 }

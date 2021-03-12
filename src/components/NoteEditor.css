@@ -7,7 +7,6 @@
 
 .NoteEditor {
     width: 500px;
-    background-color: white;
     border-radius: 5px;
     text-align: left;
     padding: 1em;
@@ -20,6 +19,10 @@
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 0.5em;
+}
+
+.NoteEditor-toolbar {
+    display: flex;
 }
 
 [contenteditable][placeholder]:empty:before {
