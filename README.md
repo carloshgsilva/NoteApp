@@ -6,5 +6,6 @@ You can view the [demo](https://carloshgsilva.github.io/NoteApp/)
 This project is for learning purposes
 
 ### TODO
-- [ ] Checklist
+- [x] Checklist
+- [ ] Mobile Friendly
 - [ ] Dark mode
