@@ -34,7 +34,7 @@ function App() {
   }
 
   var handleNewNote = () => {
-    var newNote = {title: "", content: "", color: "rgb(255, 255, 255)"};
+    var newNote = {title: "", content: "", color: "rgb(255, 255, 255)", checklist: []};
 
     notes.push(newNote);
     setNotes(notes);
@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Notes</h1>
+        <h1>&#x270e; Notes</h1>
       </header>
       <main>
         <div className="App-container">

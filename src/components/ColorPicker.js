@@ -26,7 +26,7 @@ function ColorPicker({color, onChange}){
         <div className="ColorPicker">
             <div className="ColorPicker-panel" style={{backgroundColor:color}}>
                 {Colors.map((c, index) => 
-                    <div className="ColorPicker-color" onClick={handleColorClick} style={{backgroundColor:c}}></div>
+                    <div key={index} className="ColorPicker-color" onClick={handleColorClick} style={{backgroundColor:c}}></div>
                 )}
             </div>
         </div>

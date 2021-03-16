@@ -1,0 +1,50 @@
+.ChecklistItem {
+    position: relative;
+    margin: 0 4px;
+    margin-top: 5px;
+    padding: 2px 4px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+.ChecklistItem-content {
+    flex-grow: 1;
+}
+
+.ChecklistItem input[type="checkbox"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+:hover > .ChecklistItem-delete {
+    opacity: 1.0;
+}
+
+.ChecklistItem-delete {
+     font-size: 0.8em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 1.4em;
+     height: 1.4em;
+     line-height: 1;
+     padding: 0.2em;
+     border-radius: 100%;
+     cursor: pointer;
+     user-select: none;
+     color: #0006;
+     transition: background-color 100ms, opacity 100ms ease-out;
+     opacity: 0.0;
+}
+.ChecklistItem-delete:hover {
+    background-color: #0002;
+}
+.ChecklistItem-delete:active {
+    background-color: #0004;
+}
