@@ -16,7 +16,7 @@ function AddChecklistItemButton({onClick}){
 
 function DeleteButton({onClick}) {
     return (
-        <CircleButton onClick={onClick} color="#E66F" icon="&#x2716;"/>
+        <CircleButton onClick={onClick} color="#E66F" icon="&#x1F5D1;"/>
     );
 }
 
