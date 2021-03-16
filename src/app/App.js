@@ -7,8 +7,8 @@ import { useState } from 'react';
 var initialNotes = 
 JSON.parse(localStorage.getItem("notes"))||
 [
-  {title:"Note 1", content:"Some Content", color:"white"},
-  {title:"Note 2", content:"Some Content", color:"white"}
+  {title:"Note 1", content:"Some Content", color:"white", checklist: [{done: true, content: "Done checklist"}, {done: false, content: "Not done checklist"}]},
+  {title:"Note 2", content:"Some Content", color:"white", checklist: [] }
 ];
 
 function App() {
